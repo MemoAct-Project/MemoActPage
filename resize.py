@@ -77,8 +77,8 @@ def resize_videos(input_dir: str, output_dir: str, width: int, height: int):
 
 
 if __name__ == "__main__":
-    INPUT_DIR  = "input_path"
-    OUTPUT_DIR = "output_path"
+    INPUT_DIR  = "video/1"
+    OUTPUT_DIR = "video/2"
     WIDTH  = 640
     HEIGHT = 360
 

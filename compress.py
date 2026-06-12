@@ -77,7 +77,7 @@ def compress_all_videos(video_dir: str, crf: int = 28):
 
 
 if __name__ == "__main__":
-    VIDEO_DIR = "input_path"
+    VIDEO_DIR = "video/1"
     CRF = 28   # 画质：18~28（越大压缩率越高，建议网页用 26~30）
 
     # 备份（可选，推荐执行）
