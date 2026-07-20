@@ -564,6 +564,23 @@ respectively.
           As shown in Table VI, our memory module can be seamlessly integrated into existing policies to improve history-aware decision making. 
         </p>
       </div>
+
+      <div class="content has-text-justified"
+        style="font-size: 20px; line-height: 1.6; color: #444;">
+        <p>
+          We conduct memory-intervention experiments on CTBO and PBB, with 20 trials per setting, at memory-critical states where MemoAct achieves a 100% success rate with its default memory configuration. For CTBO, after the robot clicks a button, we delete the short-term memory, delete the long-term memory, or shuffle the stored memory entries. For PBB, when the robot needs to return the red block to its original position, we delete the short-term memory, delete the long-term memory, or replace the current memory with memory from another episode.
+        </p>
+      </div>
+      <div class="image-section" style="text-align: center; margin: 30px 0;">
+        <img src="img/experiments4.png" alt="Memory-intervention results on CTBO and PBB" style="max-width: 80%; height: auto;">
+      </div>
+      <div class="content has-text-justified"
+        style="font-size: 20px; line-height: 1.6; color: #444;">
+        <p>
+          The results reveal task-specific memory dependence. On CTBO, deleting the short-term memory reduces the success rate to 0%, while deleting the long-term memory retains 90% success and shuffling the memory yields 60%, showing that selecting the next button mainly depends on recent progress tracking. On PBB, deleting the short-term memory has no effect, whereas deleting or swapping the long-term memory reduces success to 0%, showing that the original block position is retrieved from episode-specific long-term memory. These controlled degradations confirm that MemoAct actively uses both memory banks for history-aware action generation.
+        </p>
+      </div>
+      
       <div class="image-section" style="text-align: center; margin: 30px 0;">
         <img src="img/experiments3.png" style="max-width: 70%; height: auto;">
       </div>
