@@ -86,6 +86,22 @@
     margin-bottom: 6px;
   }
 
+  .video-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    gap: 12px;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .video-subsection-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin: 18px 0 12px;
+  }
+
   .video-item {
     display: flex;
     flex-direction: column;
@@ -109,6 +125,14 @@
 
   .video-label-ours {
     color: #1a7abf;
+  }
+
+  .video-context {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.25;
+    margin: 2px 0 0;
+    text-align: center;
   }
 
   @media screen and (max-width: 768px) {
@@ -1173,6 +1197,79 @@ respectively.
                     <source type="video/mp4" src="video/ctbo_memoact_general_success2_edit.mp4" />
                   </video>
                   <p style="font-weight: 700; text-align: center; color: #333; font-size: 14px; margin-top: 6px;">Unseen Background</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Memory Intervention Experiments -->
+            <div id="memory-intervention-experiments" class="video-section-card" style="padding: 18px;">
+              <h4 class="has-text-centered">Memory Intervention Experiments at 4x Speed</h4>
+
+              <h5 class="video-subsection-title">Click Three Buttons in Order (CTBO)</h5>
+              <div class="video-grid-2x2">
+                <div class="video-item">
+                  <video autoplay muted loop playsinline>
+                    <source type="video/mp4" src="video/eidt_memory_intervention/origin_beat_an.mp4" />
+                  </video>
+                  <p class="video-label video-label-ours">MemoAct (ours)</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay muted loop playsinline>
+                    <source type="video/mp4" src="video/eidt_memory_intervention/delete_short_beat_an.mp4" />
+                  </video>
+                  <p class="video-label">Delete Short-Term Memory</p>
+                  <p class="video-context">after clicking blue button</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay muted loop playsinline>
+                    <source type="video/mp4" src="video/eidt_memory_intervention/delete_long_beat_an.mp4" />
+                  </video>
+                  <p class="video-label">Delete Long-Term Memory</p>
+                  <p class="video-context">after clicking blue button</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay muted loop playsinline>
+                    <source type="video/mp4" src="video/eidt_memory_intervention/shuffle_beat_an.mp4" />
+                  </video>
+                  <p class="video-label">Shuffle Memory</p>
+                  <p class="video-context">after clicking blue button</p>
+                </div>
+              </div>
+
+              <h5 class="video-subsection-title">Put Block Back (PBB)</h5>
+              <div class="video-grid-2x2">
+                <div class="video-item">
+                  <video autoplay muted loop playsinline>
+                    <source type="video/mp4" src="video/eidt_memory_intervention/origin_pbb.mp4" />
+                  </video>
+                  <p class="video-label video-label-ours">MemoAct (ours)</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay muted loop playsinline>
+                    <source type="video/mp4" src="video/eidt_memory_intervention/delete_short_pbb.mp4" />
+                  </video>
+                  <p class="video-label">Delete Short-Term Memory</p>
+                  <p class="video-context">when return the red block</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay muted loop playsinline>
+                    <source type="video/mp4" src="video/eidt_memory_intervention/delete_long_pbb.mp4" />
+                  </video>
+                  <p class="video-label">Delete Long-Term Memory</p>
+                  <p class="video-context">when return the red block</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay muted loop playsinline>
+                    <source type="video/mp4" src="video/eidt_memory_intervention/swap_pbb.mp4" />
+                  </video>
+                  <p class="video-label">Swap Memory</p>
+                  <p class="video-context">when return the red block</p>
                 </div>
               </div>
             </div>
